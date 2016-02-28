@@ -1,0 +1,253 @@
+/********************************
+ Generic
+********************************/
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #16293c;
+    color: #e2e2e2;
+}
+h1 {
+	margin: 1.5rem 0 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+h2 {
+    line-height: 1;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+a {
+    color: #4792dc;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #d7d7d7;
+}
+section {
+    padding: 1em;
+}
+code {
+      padding: 3px;
+      background-color: #051a2d;
+      border-radius: 2px;
+}
+
+/********************************
+ Helpers
+********************************/
+.clearfix { display: block; }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.float-right {
+	float: right;
+}
+/********************************
+ Layout
+********************************/
+.container {
+    margin: 0 auto;
+}
+
+/********************************
+ List
+********************************/
+.list-inline {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.list-inline > li {
+	display: inline-block;
+	list-style: none;
+	padding: 0.5rem;
+}
+/********************************
+ Header
+********************************/
+.logo {
+	float: left;
+    width: 80px;
+}
+
+/********************************
+ Components
+********************************/
+.subtitle {
+	margin-top: 0;
+}
+.social {
+	margin-top: 2em;
+}
+.social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social a:hover {
+    opacity: 0.8;
+}
+.light {
+    /*background-color: #e2e2e2;*/
+    background-color: #fff;
+    color: #16293c;
+}
+.light code {
+    background-color: #a8b6c3;
+}
+.light a:hover,
+.light a:active,
+.light a:focus {
+    color: #627a91;
+}
+.cards{
+    text-align: center;
+}
+.card {
+    background: #fff 50% 50% no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: inline-block;
+    /*float: left;*/
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    transition: all 0.3s;
+    width: 300px;
+}
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0), 0 6px 6px rgba(0,0,0,0);
+}
+
+/********************************
+ Home
+********************************/
+#lili-bermuda-card {
+    background-image: url('../images/work/lili-bermuda.png');
+}
+#rds-card {
+    background-image: url('../images/work/rds.png');
+}
+#mont-saint-sauveur-card {
+    background-image: url('../images/work/mont-saint-sauveur.png');
+}
+#iogo-card {
+    background-image: url('../images/work/iogo.png');
+}
+#deserres-card {
+    background-image: url('../images/work/deserres.png');
+}
+#braindrop-card {
+    background-image: url('../images/work/braindrop.png');
+}
+#presidents-choice-card {
+    background-image: url('../images/work/presidents-choice.jpg');
+}
+#energie-cardio-card {
+    background-image: url('../images/work/energie-cardio.png');
+}
+#uptimz-card {
+    background-image: url('../images/work/uptimz.png');
+}
+#u-cms-card {
+    background-image: url('../images/work/u-cms.png');
+}
+#poulet-du-quebec-card {
+    background-image: url('../images/work/poulet-du-quebec.png');
+}
+#saputo-card {
+    background-image: url('../images/work/saputo.png');
+}
+#ikea-card {
+    background-image: url('../images/work/ikea.png');
+}
+#loreal-card {
+    background-image: url('../images/work/loreal.png');
+}
+#lancome-card {
+    background-image: url('../images/work/lancome.png');
+}
+#hoko-card {
+    background-image: url('../images/work/hoko.png');
+}
+
+#particles-js {
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+[am-hi] {
+	position: relative;
+}
+
+[am-hi] .intro {
+    font-size: 26px;
+}
+
+[am-hi] > .container {
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	max-width: 700px;
+}
+
+[am-articles-list],
+[am-article] {
+    margin: 0;
+    padding: 0;
+}
+
+[am-article] {
+    list-style: none;
+}
+
+[am-article] .title {
+    font-size: 1.3rem;
+}
+
+[am-article] .description {
+    margin-top: 5px;
+}
+
+/********************************
+ Media queries
+********************************/
+@media (min-width: 480px){
+    .logo {
+        width: 100px;
+    }
+    .main-menu {
+    	margin-top: 7px;
+    }
+    .intro {
+    	margin-top: 2em;
+    }
+    .social {
+    	margin-bottom: 2em;
+    }
+    .container {
+        max-width: 500px;
+    }
+}
