@@ -86,7 +86,9 @@ code {
 ********************************/
 .logo {
 	float: left;
-    width: 80px;
+    margin: 11px 0 0 0;
+    font-weight: 300;
+    text-transform: none;
 }
 
 /********************************
@@ -235,9 +237,6 @@ code {
  Media queries
 ********************************/
 @media (min-width: 480px){
-    .logo {
-        width: 100px;
-    }
     .main-menu {
     	margin-top: 7px;
     }
