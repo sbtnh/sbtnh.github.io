@@ -1,252 +1,342 @@
 /********************************
  Generic
 ********************************/
-html, 
+
+html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto","Helvetica Neue", Arial, sans-serif;
-    line-height: 1.4;
-    background-color: #16293c;
-    color: #e2e2e2;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #16293c;
+  color: #e2e2e2;
 }
+
 h1 {
-	margin: 1.5rem 0 1rem;
-    line-height: 1;
-    text-transform: uppercase;
+  margin: 1.5rem 0 1rem;
+  line-height: 1;
+  text-transform: uppercase;
 }
+
 h2 {
-    line-height: 1;
-    margin-bottom: 0.2em;
-    text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
 }
+
 a {
-    color: #4792dc;
-    text-decoration: none;
+  color: #4792dc;
+  text-decoration: none;
 }
+
 a:hover,
 a:active,
 a:focus {
-    color: #d7d7d7;
+  color: #d7d7d7;
 }
+
 section {
-    padding: 1em;
+  padding: 1em;
 }
+
 code {
-      padding: 3px;
-      background-color: #051a2d;
-      border-radius: 2px;
+  padding: 3px;
+  background-color: #051a2d;
+  border-radius: 2px;
 }
+
 
 /********************************
  Helpers
 ********************************/
-.clearfix { display: block; }
+
+.clearfix {
+  display: block;
+}
+
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
+
 .center {
-	text-align: center;
+  text-align: center;
 }
+
 .align-right {
-	text-align: right;
+  text-align: right;
 }
+
 .float-right {
-	float: right;
+  float: right;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+
 /********************************
  Layout
 ********************************/
+
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
+
 
 /********************************
  List
 ********************************/
+
 .list-inline {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
-.list-inline > li {
-	display: inline-block;
-	list-style: none;
-	padding: 0.5rem;
+
+.list-inline>li {
+  display: inline-block;
+  list-style: none;
+  padding: 0.5rem;
 }
+
+
 /********************************
  Header
 ********************************/
+
 .logo {
-	float: left;
-    margin: 11px 0 0 0;
-    font-weight: 300;
-    text-transform: none;
+  float: left;
+  margin: 11px 0 0 0;
+  font-weight: 300;
+  text-transform: none;
 }
+
 
 /********************************
  Components
 ********************************/
+
 .subtitle {
-	margin-top: 0;
+  margin-top: 0;
 }
+
 .social {
-	margin-top: 2em;
+  margin-top: 2em;
 }
+
 .social a {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
+
 .social a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
+
 .light {
-    /*background-color: #e2e2e2;*/
-    background-color: #fff;
-    color: #16293c;
+  /*background-color: #e2e2e2;*/
+  background-color: #fff;
+  color: #16293c;
 }
+
 .light code {
-    background-color: #a8b6c3;
+  background-color: #a8b6c3;
 }
+
 .light a:hover,
 .light a:active,
 .light a:focus {
-    color: #627a91;
+  color: #627a91;
 }
-.cards{
-    text-align: center;
+
+.cards {
+  text-align: center;
 }
+
 .card {
-    background: #fff 50% 50% no-repeat;
-    background-size: cover;
-    border-radius: 2px;
-    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);
-    display: inline-block;
-    /*float: left;*/
-    height: 300px;
-    margin: 1rem;
-    position: relative;
-    transition: all 0.3s;
-    width: 300px;
+  background: #fff 50% 50% no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  /*float: left;*/
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  width: 300px;
 }
+
 .card:hover {
-    box-shadow: 0 10px 14px rgba(0,0,0,.2),0 4px 15px rgba(0,0,0,.2);
+  box-shadow: 0 10px 14px rgba(0, 0, 0, .2), 0 4px 15px rgba(0, 0, 0, .2);
 }
+
 
 /********************************
  Home
 ********************************/
+
 #lili-bermuda-card {
-    background-image: url('../images/work/lili-bermuda.png');
+  background-image: url('../images/work/lili-bermuda.png');
 }
+
 #rds-card {
-    background-image: url('../images/work/rds.png');
+  background-image: url('../images/work/rds.png');
 }
+
 #mont-saint-sauveur-card {
-    background-image: url('../images/work/mont-saint-sauveur.png');
+  background-image: url('../images/work/mont-saint-sauveur.png');
 }
+
 #iogo-card {
-    background-image: url('../images/work/iogo.png');
+  background-image: url('../images/work/iogo.png');
 }
+
 #deserres-card {
-    background-image: url('../images/work/deserres.png');
+  background-image: url('../images/work/deserres.png');
 }
+
 #braindrop-card {
-    background-image: url('../images/work/braindrop.png');
+  background-image: url('../images/work/braindrop.png');
 }
+
 #presidents-choice-card {
-    background-image: url('../images/work/presidents-choice.jpg');
+  background-image: url('../images/work/presidents-choice.jpg');
 }
+
 #energie-cardio-card {
-    background-image: url('../images/work/energie-cardio.png');
+  background-image: url('../images/work/energie-cardio.png');
 }
+
 #uptimz-card {
-    background-image: url('../images/work/uptimz.png');
+  background-image: url('../images/work/uptimz.png');
 }
+
 #u-cms-card {
-    background-image: url('../images/work/u-cms.png');
+  background-image: url('../images/work/u-cms.png');
 }
+
 #poulet-du-quebec-card {
-    background-image: url('../images/work/poulet-du-quebec.png');
+  background-image: url('../images/work/poulet-du-quebec.png');
 }
+
 #saputo-card {
-    background-image: url('../images/work/saputo.png');
+  background-image: url('../images/work/saputo.png');
 }
+
 #ikea-card {
-    background-image: url('../images/work/ikea.png');
+  background-image: url('../images/work/ikea.png');
 }
+
 #loreal-card {
-    background-image: url('../images/work/loreal.png');
+  background-image: url('../images/work/loreal.png');
 }
+
 #lancome-card {
-    background-image: url('../images/work/lancome.png');
+  background-image: url('../images/work/lancome.png');
 }
+
 #hoko-card {
-    background-image: url('../images/work/hoko.png');
+  background-image: url('../images/work/hoko.png');
+}
+
+#unibroue-card {
+  background-image: url('../images/work/unibroue.svg');
+  background-size: 260px auto;
+  background-color: #171414;
+}
+
+#linkr-card {
+  background-image: url('../images/work/linkr.svg');
+  background-size: 260px auto;
 }
 
 #particles-js {
-	position: absolute;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 [am-hi] {
-	position: relative;
+  position: relative;
 }
 
 [am-hi] .intro {
-    font-size: 26px;
+  font-size: 26px;
 }
 
-[am-hi] > .container {
-	position: relative;
-	z-index: 10;
-	text-align: center;
-	max-width: 700px;
+[am-hi]>.container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 700px;
 }
 
 [am-articles-list],
 [am-article] {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 [am-article] {
-    list-style: none;
+  list-style: none;
 }
 
 [am-article] .title {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 [am-article] .description {
-    margin-top: 5px;
+  margin-top: 5px;
 }
+
+.techno-logo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.techno-logo > img {
+  height: 70px;
+  margin: 10px;
+  
+}
+
 
 /********************************
  Media queries
 ********************************/
-@media (min-width: 480px){
-    .main-menu {
-    	margin-top: 7px;
-    }
-    .intro {
-    	margin-top: 2em;
-    }
-    .social {
-    	margin-bottom: 2em;
-    }
-    .container {
-        max-width: 500px;
-    }
+
+@media (min-width: 480px) {
+  .main-menu {
+    margin-top: 7px;
+  }
+  .intro {
+    margin-top: 2em;
+  }
+  .social {
+    margin-bottom: 2em;
+  }
+  .container {
+    max-width: 500px;
+  }
 }
