@@ -165,7 +165,7 @@ code {
   background-color: #a8b6c3;
 }
 
-.light a:hover,
+
 .light a:active,
 .light a:focus {
   color: #627a91;
@@ -173,10 +173,7 @@ code {
 
 .light a:hover {
   color: #0000f0;
-  background-image: linear-gradient(180deg,rgba(0,0,240,.68) 50%,rgba(0,0,240,0) 0);
-  background-repeat: repeat-x;
-  background-size: 2px .1em;
-  background-position: 0 1.07em;
+  text-decoration: underline;
 }
 
 .cards {
