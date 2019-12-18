@@ -28,8 +28,12 @@ h2 {
 }
 
 a {
-  color: #4792dc;
+  color: #0000f0;
   text-decoration: none;
+}
+
+.dark a {
+  color: #4792dc;
 }
 
 a:hover,
@@ -167,6 +171,14 @@ code {
   color: #627a91;
 }
 
+.light a:hover {
+  color: #0000f0;
+  background-image: linear-gradient(180deg,rgba(0,0,240,.68) 50%,rgba(0,0,240,0) 0);
+  background-repeat: repeat-x;
+  background-size: 2px .1em;
+  background-position: 0 1.07em;
+}
+
 .cards {
   text-align: center;
 }
@@ -267,6 +279,11 @@ code {
 #linkr-card {
   background-image: url('../images/work/linkr.svg');
   background-size: 260px auto;
+}
+
+#locnest-card {
+  background-image: url('../images/work/locnest.svg');
+  background-size: 230px auto;
 }
 
 #particles-js {
